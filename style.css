@@ -86,3 +86,13 @@ body {
     background: none;
     cursor: pointer;
 }
+
+/*DYNAMIC CONTENT SECTIONS*/
+.section-box {
+    border: 1px solid #b5b5b5;
+    padding: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
