@@ -122,3 +122,30 @@ body {
 .actions-cells {
     margin-right: 0.5rem;
 }
+
+/*BUTTONS*/
+.btn {
+    border: 1px solid #b5b5b5;
+    padding: 11px;
+    font-size: 0.82rem;
+    margin: 12px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.update {
+    background-color: rgb(5, 122, 5);
+    color: #ece7e7;
+}
+
+.delete {
+    background-color: rgb(171, 19, 19);
+    color: #ece7e7;
+}
+
+.add {
+    background-color: rgb(13, 13, 174);
+    color: #ece7e7;
+}
