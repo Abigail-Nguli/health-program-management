@@ -96,3 +96,29 @@ body {
 .hidden {
     display: none;
 }
+
+/*TABLES*/
+.custom-table {
+    width: 100%;
+    border: 1px solid #9d9b9b;
+    font-size: 0.875rem;
+    table-layout: fixed;
+}
+
+.custom-header {
+    text-align: left;
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+
+.custom-row {
+    border-bottom: 1px solid #bcbec1;
+}
+
+.custom-data {
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.action-cells {
+    margin-right: 0.5rem;
+}
