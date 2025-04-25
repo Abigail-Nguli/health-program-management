@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Program Client Management</title>
+    <script
+      src="https://kit.fontawesome.com/a29196e54d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--SIDEBAR-->
+      <nav class="navbar">
+        <ul class="nav-ul">
+          <li>
+            <button
+              id="nav-health"
+              class="nav-link"
+              onclick="showSection('health')"
+              type="button"
+            >
+              Health Programs
+            </button>
+          </li>
+          <li>
+            <button
+              id="nav-clients"
+              class="nav-link"
+              onclick="showSection('clients')"
+              type="button"
+            >
+              Clients
+            </button>
+          </li>
+          <li>
+            <button
+              id="nav-enroll"
+              class="nav-link"
+              onclick="showSection('enroll')"
+              type="button"
+            >
+              Enroll Clients
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--MAIN CONTENT AREA-->
+      <main class="main-content">
+        <!--SEARCH BAR-->
+        <div class="search-bar">
+            <form class="search-form" onsubmit="event.preventDefault(); searchClient();">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search" aria-label="Search">
+                <button type="submit" class="search-btn" aria-label="Search button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <!--DYNAMIC CONTENT CONTAINER-->
+        <div id="content-container" class="content-container">
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
