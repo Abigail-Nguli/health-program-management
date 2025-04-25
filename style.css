@@ -15,6 +15,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: row;
 }
 
 /*SIDEBAR*/
@@ -148,4 +149,25 @@ body {
 .add {
     background-color: rgb(13, 13, 174);
     color: #ece7e7;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #c4d1f2;
+    border-top: 1px solid #3d3e3f;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin: 5px;
+    }
 }
