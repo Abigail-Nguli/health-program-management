@@ -52,125 +52,142 @@
       <main class="main-content">
         <!--SEARCH BAR-->
         <div class="search-bar">
-            <form class="search-form" onsubmit="event.preventDefault(); searchClient();">
-                <input type="text" class="search-input" id="searchInput" placeholder="Search" aria-label="Search">
-                <button type="submit" class="search-btn" aria-label="Search button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+          <form
+            class="search-form"
+            onsubmit="event.preventDefault(); searchClient();"
+          >
+            <input
+              type="text"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="submit" class="search-btn" aria-label="Search button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
         </div>
 
         <!--DYNAMIC CONTENT CONTAINER-->
         <div id="content-container" class="content-container">
-            <div id="default-message" class="hidden">
-                <!--CONTENT IS INJECTED HERE-->
-            </div>
-
-            <!--HEALTH PROGRAMS SECTION-->
-            <section id="health" class="hidden section-box">
-                <button type="button" class="add btn">    
-                    Add New Program
-                </button>
-                <table class="custom-table">
-                    <thead>
-                        <tr class="custom-row">
-                            <th class="custom-header">No.</th>
-                            <th class="custom-header">Program Name</th>
-                            <th class="custom-header">Description</th>
-                            <th class="custom-header">Duration</th>
-                            <th class="custom-header">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="custom-row">
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data actions-cells">
-                                <button class="update btn"><i class="fa-solid fa-file-pen"></i>Edit</button>
-                                <button class="delete btn"><i class="fa-solid fa-trash"></i>Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!--CLIENTS SECTION-->
-            <section id="clients" class="hidden section-box">
-                <button type="button" class="add btn">
-                    Add New Client
-                </button>
-                <table class="custom-table">
-                    <thead>
-                        <tr class="custom-row">
-                            <th class="custom-header">No.</th>
-                            <th class="custom-header">Full Name</th>
-                            <th class="custom-header">Age</th>
-                            <th class="custom-header">Gender</th>
-                            <th class="custom-header">Contact Info</th>
-                            <th class="custom-header">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="cutom-row">
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data actions-cells">
-                                <button class="update btn"><i class="fa-solid fa-file-pen"></i>Edit</button>
-                                <button class="delete btn"><i class="fa-solid fa-trash"></i>Delete</button>
-                            </td> 
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!--ENROLL CLIENTS SECTION-->
-            <section id="enroll" class="hidden section-box">
-                <table class="custom-table">
-                    <thead>
-                        <tr class="custom-row">
-                            <th class="custom-header">No.</th>
-                            <th class="custom-header">Full Name</th>
-                            <th class="custom-header">Age</th>
-                            <th class="custom-header">Gender</th>
-                            <th class="custom-header">Contact</th>
-                            <th class="custom-header">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="custom-row">
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data"></td>
-                            <td class="custom-data actions-cells">
-                                <button class="update btn"><i class="fa-solid fa-file-pen"></i>ENROLL</button>
-                                <button class="delete btn"><i class="fa-solid fa-trash"></i>UNENROLL</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!--SEARCH SECTION-->
-            <section id="serach" class="hidden search-section">
-
-            </section>
+          <div id="default-message" class="hidden">
+            <!--CONTENT IS INJECTED HERE-->
+          </div>
         </div>
+
+        <!--HEALTH PROGRAMS SECTION-->
+        <section id="health" class="hidden section-box">
+          <button type="button" class="add btn">Add New Program</button>
+          <table class="custom-table">
+            <thead>
+              <tr class="custom-row">
+                <th class="custom-header">No.</th>
+                <th class="custom-header">Program Name</th>
+                <th class="custom-header">Description</th>
+                <th class="custom-header">Duration</th>
+                <th class="custom-header">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="custom-row">
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data actions-cells">
+                  <button class="update btn">
+                    <i class="fa-solid fa-file-pen"></i>Edit
+                  </button>
+                  <button class="delete btn">
+                    <i class="fa-solid fa-trash"></i>Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--CLIENTS SECTION-->
+        <section id="clients" class="hidden section-box">
+          <button type="button" class="add btn">Add New Client</button>
+          <table class="custom-table">
+            <thead>
+              <tr class="custom-row">
+                <th class="custom-header">No.</th>
+                <th class="custom-header">Full Name</th>
+                <th class="custom-header">Age</th>
+                <th class="custom-header">Gender</th>
+                <th class="custom-header">Contact Info</th>
+                <th class="custom-header">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cutom-row">
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data actions-cells">
+                  <button class="update btn">
+                    <i class="fa-solid fa-file-pen"></i>Edit
+                  </button>
+                  <button class="delete btn">
+                    <i class="fa-solid fa-trash"></i>Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--ENROLL CLIENTS SECTION-->
+        <section id="enroll" class="hidden section-box">
+          <table class="custom-table">
+            <thead>
+              <tr class="custom-row">
+                <th class="custom-header">No.</th>
+                <th class="custom-header">Full Name</th>
+                <th class="custom-header">Age</th>
+                <th class="custom-header">Gender</th>
+                <th class="custom-header">Contact</th>
+                <th class="custom-header">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="custom-row">
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data"></td>
+                <td class="custom-data actions-cells">
+                  <button class="update btn">
+                    <i class="fa-solid fa-file-pen"></i>ENROLL
+                  </button>
+                  <button class="delete btn">
+                    <i class="fa-solid fa-trash"></i>UNENROLL
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--SEARCH SECTION-->
+        <section id="serach" class="hidden search-section"></section>
       </main>
     </div>
 
     <!--FOOTER-->
     <footer>
-        <p>This project was developed by <b>Abigail Nguli</b> and is open-sourced on <a href="">GitHub</a></p>
+      <p>
+        This project was developed by <b>Abigail Nguli</b> and is open-sourced
+        on <a href="">GitHub</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>
-    
   </body>
 </html>
