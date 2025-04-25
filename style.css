@@ -65,7 +65,7 @@ body {
 }
 
 /*SEARCH BAR*/
-.serach-bar {
+.search-bar {
     display: flex;
     justify-content: flex-end;
     border-radius: 1.5rem;
