@@ -10,26 +10,39 @@ function showSection(section) {
   }
 }
 
+//MANAGE searchClient FUNCTION TO DISPLAY RESULTS
 function searchClient() {
-  const input = document.getElementById("searchInput").value.trim();
-  const defaultMessage = document.getElementById("default-message");
+  const searchTerm = document.getElementById('searchInput').ariaValueMax.trim();
 
-  //HIDE ALL SECTIONS
-  const container = document.getElementById("content-container");
-  container
-    .querySelectorAll("section")
-    .forEach((s) => s.classList.add("hidden"));
+  if (searchTerm.length > 2) {
+    Swal.fire({
+      title: 'Search term too short',
+      text: 'Please enter at least 2 characters',
+      icon: 'warning'
+    });
+    return;
+  }
 
-  defaultMessage.classList.remove("hidden");
+  //SHOW LOADING STATE
+  document.getElementById('search-results-content').innerHTML = 
+  '<div class="loading-state">Searching clients...</div>';
 
-  const searchMessage = input
-    ? `Search results for "${input}": (Display search results here)`
-    : "Please enter a search term!";
+  //SHOW RESULTS
+  showSection('search-result');
 
-  defaultMessage.textContent = searchMessage;
+  //AJAX REQUEST
+  fetch(`search-clients.php?q=${encodeURIComponent(searchTerm)}`)
+      .then(response => {
+        if (!response.ok) throw new Error('Network respomse was not ok');
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('search-results-content').innerHTML = 
+        `<div class="error-state">Search failed: ${error.message}</div>`;
+      });
 }
 
-
+//CONFIRM DELETING
 function confirmDelete(type, id) {
   const deleteUrls = {
     client: "delete-client.php",
