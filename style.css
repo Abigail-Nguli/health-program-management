@@ -247,4 +247,12 @@ footer {
     .btn {
         margin: 5px;
     }
+
+    .form-card {
+        padding: 2.5rem;
+    }
+
+    .form-title {
+        font-size: 1.75rem;
+    }
 }
