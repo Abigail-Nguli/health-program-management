@@ -38,7 +38,7 @@
                     </tr>
                     <tr class="form-row">
                         <td colspan="2">
-                            <input type="submit" name="submit" value="Add Program" class="submt-btn">
+                            <input type="submit" name="submit" value="Add Program" class="submit-btn">
                         </td>
                     </tr>
                 </table>
