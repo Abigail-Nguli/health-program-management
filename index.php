@@ -52,10 +52,10 @@
               type="text"
               class="search-input"
               id="searchInput"
-              placeholder="Search"
-              aria-label="Search"
+              placeholder="Search clients..."
+              aria-label="Search clients"
             />
-            <button type="submit" class="search-btn" aria-label="Search button">
+            <button type="submit" class="search-btn" aria-label="Search">
               <i class="fas fa-search"></i>
             </button>
           </form>
