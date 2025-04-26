@@ -83,7 +83,7 @@
                         class="delete-btn">
                         <i class="fa-solid fa-file-pen"></i> Edit Client
                     </button>
-                    <button onclick="window.location.href='delete-client.php?id=<?= $client_id ?>'"
+                    <button onclick="confirmDelete('program', <?php echo $id; ?>"
                         class="delete-btn">
                         <i class="fa-solid fa-trash"></i> Delete Client
                     </button>
