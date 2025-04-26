@@ -64,5 +64,36 @@
 </html>
 
 <?php 
-    
+    if (isset($_POST['submit'])) {
+        //GET DATA
+        $program_name = $_POST['program_name'];
+        $description = $_POST['description'];
+        $duration = $_POST['duration'];
+        $start_date = $_POST['start_date'];
+
+        //SQL STATEMENT
+        $stmt = $pdo->prepare("INSERT INTO programs (name, description, duration, start_date) VALUES (?, ?, ?, ?)");
+        $res = $stmt->execute([$program_name, $description, $duration, $start_date]);
+
+        if ($res) {
+            echo '<script>
+                Swal.fire({
+                    title: "Success!",
+                    text: "Program Added Successfully!",
+                    icon: "success",
+                    confirmButonText: "OK
+        }).then(() => { window.location.href = "index.php"; });
+            </script>';
+        }else {
+            echo '<script>
+                Swal.fire({
+                    title: "Error!",
+                    text: "❌Failed to Add Program!",
+                    icon: "error",
+                    confirmButtonText: "OK
+                });
+            </script>';
+        }
+        exit();
+    }
 ?>
