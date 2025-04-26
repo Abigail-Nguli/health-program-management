@@ -25,7 +25,7 @@
     }
 
     try {
-        $stmt = $pdo->prepare("DELETE FRO, clients WHERE id = ?");
+        $stmt = $pdo->prepare("DELETE FROM clients WHERE id = ?");
         $stmt->execute(([$id]));
 
         echo '<!DOCTYPE html>
