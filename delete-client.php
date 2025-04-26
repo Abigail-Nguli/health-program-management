@@ -1,0 +1,71 @@
+<?php
+    include 'config.php';
+
+    //VALIDATE ID
+    $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+
+    if (!$id) {
+        die('<!DOCTYPE html>
+        <html>
+            <head>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">></script>
+            </head>
+            <body>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Invalid ID",
+                            text: "No valid client ID provided"
+                        }).then() => window.location.href = "index.php");
+                    });
+                </script>
+            </body>
+        </html>');
+    }
+
+    try {
+        $stmt = $pdo->prepare("DELETE FRO, clients WHERE id = ?");
+        $stmt->execute(([$id]));
+
+        echo '<!DOCTYPE html>
+        <html>
+            <head>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">></script>
+            </head>
+            <body>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        Swal.fire({
+                            icon: "success",
+                            title: "Deleted",
+                            text: "Client Deleted Successfully",
+                            confirmButtonColor: "#3085d6"
+                        }).then() => window.location.href = "index.php");
+                    });
+                </script>
+            </body>
+        </html>';
+        exit();
+    } catch (PDOException $e) {
+        echo '<!DOCTYPE html>
+        <html>
+            <head>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">></script>
+            </head>
+            <body>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Failed",
+                            text: "❌Failed to Delete Client",
+                            confirmButtonColor: "#d33"
+                        }).then() => window.location.href = "index.php");
+                    });
+                </script>
+            </body>
+        </html>';
+        exit();
+    }
+?>
