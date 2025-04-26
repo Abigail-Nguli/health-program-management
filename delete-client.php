@@ -59,7 +59,7 @@
                         Swal.fire({
                             icon: "error",
                             title: "Failed",
-                            text: "❌Failed to Delete Client",
+                            html: "❌ Failed to Delete Client<br><br>'.addslashes($e->getMessage()).'",
                             confirmButtonColor: "#d33"
                         }).then() => window.location.href = "index.php");
                     });
