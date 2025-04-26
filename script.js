@@ -1,7 +1,7 @@
 //SHOW SECTION WHEN LINK IS CLICKED
 function showSection(sectionId) {
   //HIDE ALL SECTIONS
-  document.querySelectorAll("section"),forEach((section) => {
+  document.querySelectorAll("section").forEach((section) => {
     section.classList.add("hidden");
   });
 
