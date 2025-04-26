@@ -15,25 +15,25 @@
                     <tr class="form-row">
                         <td class="form-label">Program Name: </td>
                         <td>
-                            <input class="form-input" type="text" name="program_name" placeholder="Enter Program Name">
+                            <input class="form-input" type="text" name="program_name" placeholder="Enter Program Name" required>
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Description</td>
                         <td>
-                            <input class="form-input" type="text" name="description" placeholder="Program Description">
+                            <input class="form-input" type="text" name="description" placeholder="Program Description" required>
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Duration</td>
                         <td>
-                            <input class="form-input" type="number" name="duration" placeholder="(in days)">
+                            <input class="form-input" type="number" name="duration" placeholder="(in days)" required>
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Start Date</td>
                         <td>
-                            <input class="form-input" type="date" name="start_date" placeholder="Program Start Date">
+                            <input class="form-input" type="date" name="start_date" placeholder="Program Start Date" required>
                         </td>
                     </tr>
                     <tr class="form-row">
