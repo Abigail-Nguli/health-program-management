@@ -165,7 +165,11 @@
         </section>
 
         <!--SEARCH SECTION-->
-        <section id="serach" class="hidden search-section"></section>
+        <section id="serach-results" class="hidden section-box">
+            <div id="search-results-content">
+                <!--REsULTS WILL BE LOADED HERE VIA AJAX-->
+            </div>
+        </section>
       </main>
     </div>
 
