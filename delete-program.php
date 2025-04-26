@@ -17,7 +17,7 @@
                             icon: "error",
                             title: "Invalid ID",
                             text: "No valid Program ID provided"
-                        }).then() => window.location.href = "index.php");
+                        }).then(() => window.location.href = "index.php");
                     });
                 </script>
             </body>
@@ -26,7 +26,7 @@
 
     try {
         $stmt = $pdo->prepare("DELETE FROM programs WHERE id = ?");
-        $stmt->execute(([$id]));
+        $stmt->execute([$id]);
 
         echo '<!DOCTYPE html>
         <html>

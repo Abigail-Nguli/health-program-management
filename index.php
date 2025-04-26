@@ -105,7 +105,7 @@
                   <button class="update btn" onclick="window.location.href='program-edit.php?id=<?php echo $id; ?>'">
                     <i class="fa-solid fa-file-pen"></i>Edit
                   </button>
-                  <button class="delete btn" onclick="confirmDelete('program', <?php echo $id; ?>">
+                  <button class="delete btn" onclick="confirmDelete('program', <?php echo $id; ?>)">
                     <i class="fa-solid fa-trash"></i>Delete
                   </button>
                 </td>
