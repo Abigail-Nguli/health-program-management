@@ -3,7 +3,7 @@
     include 'menu.php';
 
     //INITIALIZE VARIABLES
-    $id = $name = $contact_info = '';
+    $id = $name = $name = $contact_info = '';
 
     //GET AND VALIDATE CLIENT ID
     try {
