@@ -137,13 +137,28 @@
                 <th class="custom-header">Actions</th>
               </tr>
             </thead>
+            <?php 
+            try {
+                  $stmt = $pdo->prepare("SELECT * FROM clients");
+                  $stmt->execute();
+                  
+                  $sn = 1;
+                  
+                  if($stmt->rowCount() > 0) {
+                      while($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        $id = $rows['id'];
+                        $name = $rows['name'];
+                        $age = $rows['age'];
+                        $gender = $rows['gender'];
+                        $contact_info = $rows['contact_info'];
+            ?>
             <tbody>
               <tr class="cutom-row">
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
+                <td class="custom-data"><?php echo $sn++; ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($name); ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($age); ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($gender); ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($contact_info); ?></td>
                 <td class="custom-data actions-cells">
                   <button class="update btn">
                     <i class="fa-solid fa-file-pen"></i>Edit
@@ -153,6 +168,16 @@
                   </button>
                 </td>
               </tr>
+              <?php
+                        }
+                    }
+                    else {
+                      echo "<tr class='custom-row'><td colspan='12' class='custom-data error'>No Clients Added</td></tr>";
+                    }
+                } catch (PDOException $e) {
+                    echo '<tr><td colspan="6" class="text-center py-4 text-red-500">Error loading data: ' . htmlspecialchars($e->getMessage()) . '</td></tr>';
+                }
+              ?>
             </tbody>
           </table>
         </section>
