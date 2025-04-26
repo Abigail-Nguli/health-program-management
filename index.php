@@ -158,9 +158,6 @@
                   <button class="update btn">
                     <i class="fa-solid fa-file-pen"></i>ENROLL
                   </button>
-                  <button class="delete btn">
-                    <i class="fa-solid fa-trash"></i>UNENROLL
-                  </button>
                 </td>
               </tr>
             </tbody>
