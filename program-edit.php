@@ -46,7 +46,7 @@
                 </tr>
                 <tr class="form-row">
                     <td class="form-label">Description:</td>
-                    <td><input type="number" name="description" value="<?= $description ?>" class="form-input"></td>
+                    <td><input type="text" name="description" value="<?= $description ?>" class="form-input"></td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-label">Duration:</td>
