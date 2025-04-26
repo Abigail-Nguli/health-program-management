@@ -25,7 +25,7 @@
     }
 
     try {
-        $stmt = $pdo->prepare("DELETE FROM, programs WHERE id = ?");
+        $stmt = $pdo->prepare("DELETE FROM programs WHERE id = ?");
         $stmt->execute(([$id]));
 
         echo '<!DOCTYPE html>
