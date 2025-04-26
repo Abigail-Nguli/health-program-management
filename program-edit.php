@@ -76,7 +76,7 @@
             }
 
             //UPDATE CLIENT
-            $stmt = $pdo->prepare("UPDATE clients SET name = ?, description = ?, duration = ? WHERE id = ?");
+            $stmt = $pdo->prepare("UPDATE programs SET name = ?, description = ?, duration = ? WHERE id = ?");
             $res = $stmt->execute([$name, $description, $duration, $id]);
 
             if ($res && $stmt->rowCount() > 0) {
