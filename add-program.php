@@ -14,26 +14,26 @@
                 <table class="form-table">
                     <tr class="form-row">
                         <td class="form-label">Program Name: </td>
-                        <td class="form-input">
-                            <input type="text" name="program_name" placeholder="Enter Program Name">
+                        <td>
+                            <input class="form-input" type="text" name="program_name" placeholder="Enter Program Name">
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Description</td>
-                        <td class="form-input">
-                            <input type="text" name="description" placeholder="Program Description">
+                        <td>
+                            <input class="form-input" type="text" name="description" placeholder="Program Description">
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Duration</td>
-                        <td class="form-input">
-                            <input type="number" name="duration" placeholder="(in days)">
+                        <td>
+                            <input class="form-input" type="number" name="duration" placeholder="(in days)">
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Start Date</td>
-                        <td class="form-input">
-                            <input type="date" name="start_date" placeholder="Program Start Date">
+                        <td>
+                            <input class="form-input" type="date" name="start_date" placeholder="Program Start Date">
                         </td>
                     </tr>
                     <tr class="form-row">
