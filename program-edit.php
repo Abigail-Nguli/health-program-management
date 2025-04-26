@@ -13,7 +13,7 @@
         }
 
         //DATABASE QUERY
-        $stmt = $pdo->prepare("SELECT *FORM programs WHERE id = ?");
+        $stmt = $pdo->prepare("SELECT * FROM programs WHERE id = ?");
         $stmt->execute([$id]);
 
         if ($stmt->rowCount() > 0) {
