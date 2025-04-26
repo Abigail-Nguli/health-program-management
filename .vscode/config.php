@@ -1,0 +1,15 @@
+<?php 
+    session_start();
+
+    $host = 'localhost';
+    $db = 'health_info_system';
+    $user = 'root';
+    $pass = '';
+
+    try {
+        $pdo = new PDO("mysql:host=$host;dbname=$bd", $user, $pass);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }catch (PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+    }
+?>
