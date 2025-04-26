@@ -70,7 +70,7 @@
 
         <!--HEALTH PROGRAMS SECTION-->
         <section id="health" class="hidden section-box">
-          <button type="button" class="add btn">Add New Program</button>
+          <button onclick="window.location.href='add-program.php'" type="button" class="add btn">Add New Program</button>
           <table class="custom-table">
             <thead>
               <tr class="custom-row">
@@ -102,7 +102,7 @@
 
         <!--CLIENTS SECTION-->
         <section id="clients" class="hidden section-box">
-          <button type="button" class="add btn">Add New Client</button>
+          <button onclick="window.location.href='add-client.php'" type="button" class="add btn">Add New Client</button>
           <table class="custom-table">
             <thead>
               <tr class="custom-row">
