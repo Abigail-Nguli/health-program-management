@@ -1,12 +1,19 @@
-function showSection(section) {
-  const sections = ["health", "clients", "enroll"];
-  sections.forEach((sec) => {
-    document.getElementById(sec).classList.add("hidden");
+//SHOW SECTION WHEN LINK IS CLICKED
+function showSection(sectionId) {
+  //HIDE ALL SECTIONS
+  document.querySelectorAll("section"),forEach((section) => {
+    section.classList.add("hidden");
   });
-  if (sections.includes(section)) {
-    document.getElementById(section).classList.remove("hidden");
-  } else {
-    document.getElementById("default-message").classList.remove("hidden");
+
+  //SHOW REQUESTED SECTION
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.classList.remove("hidden");
+  }
+
+  //WHILE SHOWING SEARCH
+  if (sectionID === "search-results") {
+    document.getElementById("searchInput").focus();
   }
 }
 
