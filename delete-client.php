@@ -1,5 +1,5 @@
 <?php
-    include 'config.php';
+    include 'api/config.php';
 
     //VALIDATE ID
     $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
