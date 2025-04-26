@@ -90,10 +90,10 @@
 
                 if ($stmt->rowCount() > 0) {
                   while ($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                    $id = $_rows['id'];
-                    $description= $_rows['description'];
-                    $name = $_rows['name'];
-                    $duration = $_rows['duration'];
+                    $id = $rows['id'];
+                    $description= $rows['description'];
+                    $name = $rows['name'];
+                    $duration = $rows['duration'];
             ?>
             <tbody>
               <tr class="custom-row">
