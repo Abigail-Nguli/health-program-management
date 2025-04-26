@@ -102,7 +102,7 @@
                 <td class="custom-data"><?php echo htmlspecialchars($description);  ?></td>
                 <td class="custom-data"><?php echo htmlspecialchars($duration);  ?></td>
                 <td class="custom-data actions-cells">
-                  <button class="update btn">
+                  <button class="update btn" onclick="window.location.href='program-edit.php?id=<?php echo $id; ?>'">
                     <i class="fa-solid fa-file-pen"></i>Edit
                   </button>
                   <button class="delete btn" onclick="confirmDelete('program', <?php echo $id; ?>">
@@ -160,10 +160,10 @@
                 <td class="custom-data"><?php echo htmlspecialchars($gender); ?></td>
                 <td class="custom-data"><?php echo htmlspecialchars($contact_info); ?></td>
                 <td class="custom-data actions-cells">
-                  <button class="update btn">
+                  <button class="update btn" onclick="window.location.href='client-edit.php?id=<?php echo $id; ?>'">
                     <i class="fa-solid fa-file-pen"></i>Edit
                   </button>
-                  <button class="delete btn" onclick="confirmDelete('program', <?php echo $id; ?>">
+                  <button class="delete btn" onclick="confirmDelete('client', <?php echo $id; ?>)">
                     <i class="fa-solid fa-trash"></i>Delete
                   </button>
                 </td>
@@ -218,11 +218,21 @@
                 <td class="custom-data"><?php echo htmlspecialchars($gender); ?></td>
                 <td class="custom-data"><?php echo htmlspecialchars($contact_info); ?></td>
                 <td class="custom-data actions-cells">
-                  <button class="update btn">
+                  <button class="update btn" onclick="window.location.href='enroll-client.php?id=<?php echo $id; ?>'">
                     <i class="fa-solid fa-file-pen"></i>ENROLL
                   </button>
                 </td>
               </tr>
+              <?php
+                      }
+                    }
+                    else {
+                      echo "<tr class='custom-row'><td colspan='12' class='custom-data error'>No Clients Added</td></tr>";
+                    }
+                  } catch (PDOException $e) {
+                      echo '<tr><td colspan="6" class="text-center py-4 text-red-500">Error loading data: ' . htmlspecialchars($e->getMessage()) . '</td></tr>';
+                  }
+              ?>
             </tbody>
           </table>
         </section>
