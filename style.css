@@ -253,6 +253,154 @@ footer {
     padding: 18px;
 }
 
+/*SEARCH RESULTS*/
+.table-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background-color: #f8fafc;
+}
+
+.form-table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+}
+
+.form-table .form-row {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.form-table .form-row:last-child {
+    border-bottom: none;
+}
+
+.form-table .form-label {
+    padding: 0.75rem;
+    font-weight: 600;
+    color: #1e293b;
+    width: 30%;
+}
+
+.form-table .form-value {
+    padding: 0.75rem 0;
+    color: #475569;
+    width: 70%;
+}
+
+/*PROGRAMS TABLE*/
+.programs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.programs-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #98989b;
+}
+
+.programs-table .form-row {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.programs-table .form-row:last-child {
+    border-bottom: none;
+}
+
+.programs-table .form-label {
+    padding: 0.75rem 0;
+    font-weight: 600;
+    color: #1e293b;
+    text-align: left;
+}
+
+.programs-table .form-value {
+    padding: 0.75rem 0;
+    color: #475569;
+}
+
+/*ACTIONS BUTTONS*/
+.actions-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.edit-btn .delete-btn {
+    flex-direction: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0;
+    font-size: 0.875rem;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.edit-btn {
+    background-color: #6366f1;
+    border: 1px solid #6366f1;
+}
+
+.edit-btn:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.delete-btn {
+    background-color: #e74a3b;
+    border: 1px solid #e74a3b;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    border-color:#c82333;
+}
+
+.search-results-message {
+    width: 100%;
+    max-width: 28rem;
+    margin: 1rem auto 0.5rem auto;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #1e293b;
+}
+
+.search-results-message strong {
+    color: #6366f1;
+}
+
+.error-message {
+    width: 100%;
+    max-width: 28rem;
+    margin: 1rem auto 0.5rem auto;
+    padding: 1.6rem;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #c82333;
+}
+
+.error-message strong {
+    color: #6366f1;
+}
+
 /*MEDIA QUERY*/
 @media (max-width: 768px) {
     .content-container {
