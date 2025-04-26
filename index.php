@@ -81,12 +81,26 @@
                 <th class="custom-header">Actions</th>
               </tr>
             </thead>
+            <?php 
+              try {
+                $stmt = $pdo->prepare("SELECT * FROM programs");
+                $stmt->execute();
+
+                $sn = 1;
+
+                if ($stmt->rowCount() > 0) {
+                  while ($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    $id = $_rows['id'];
+                    $description= $_rows['description'];
+                    $name = $_rows['name'];
+                    $duration = $_rows['duration'];
+            ?>
             <tbody>
               <tr class="custom-row">
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
-                <td class="custom-data"></td>
+                <td class="custom-data"><?php echo $sn ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($name);  ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($description);  ?></td>
+                <td class="custom-data"><?php echo htmlspecialchars($duration);  ?></td>
                 <td class="custom-data actions-cells">
                   <button class="update btn">
                     <i class="fa-solid fa-file-pen"></i>Edit
@@ -97,6 +111,15 @@
                 </td>
               </tr>
             </tbody>
+            <?php 
+                  }
+                }else {
+                  echo "<tr class='custom-row'><td colspan='12' class='custom-data error'>No Clients Added</td></tr>";
+                }
+              } catch (PDOException $e) {
+                echo '<tr><td colspan="6" class="text-center py-4 text-red-500">Error loading data: '. htmlspecialchars($e->getMessage()) . '</td></tr>';
+              }
+            ?>
           </table>
         </section>
 
