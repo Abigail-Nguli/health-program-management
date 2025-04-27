@@ -44,7 +44,7 @@
                             title: "Deleted",
                             text: "Client Deleted Successfully",
                             confirmButtonColor: "#3085d6"
-                        }).then() => window.location.href = "<?= SITEURL  ?>");
+                        }).then(() => window.location.href = "<?= SITEURL  ?>");
                     });
                 </script>
             </body>

@@ -64,7 +64,7 @@
                             title: "Failed",
                             html: "❌ Failed to Delete Program<br><br>'.addslashes($e->getMessage()).'",
                             confirmButtonColor: "#d33"
-                        }).then() => window.location.href = "<?= SITEURL  ?>");
+                        }).then(() => window.location.href = "<?= SITEURL  ?>");
                     });
                 </script>
             </body>

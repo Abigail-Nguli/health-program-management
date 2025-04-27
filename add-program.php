@@ -69,9 +69,9 @@
                     confirmButonText: "OK
         }).then((result) => {
                     if (result).isConfirmed {
-                        window.location.href = "<?= SITEURL  ?>"; }); 
-                    }
-                });
+                        window.location.href = "<?= SITEURL  ?>"; 
+                    } 
+                    });
             </script>';
         }else {
             echo '<script>
