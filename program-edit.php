@@ -87,7 +87,7 @@
                             icon: "success",
                             confirmButtonText: "OK"
                         }).then((result) => {
-                            if (result).isConfirmed {
+                            if (result.isConfirmed) {
                                 window.location.href = "index.php"; 
                             }
                          });
