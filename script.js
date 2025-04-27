@@ -12,7 +12,7 @@ function showSection(sectionId) {
   }
 
   //WHILE SHOWING SEARCH
-  if (sectionID === "search-results") {
+  if (sectionId === "search-results") {
     document.getElementById("searchInput").focus();
   }
 }
