@@ -13,7 +13,7 @@
         }
 
         //DATABASE QUERY
-        $stmt = $pdo->prepare("SELECT *FORM clients WHERE id = ?");
+        $stmt = $pdo->prepare("SELECT * FROM clients WHERE id = ?");
         $stmt->execute([$id]);
 
         if ($stmt->rowCount() > 0) {
