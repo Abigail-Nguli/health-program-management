@@ -44,7 +44,10 @@ function searchClient() {
         return response.text();
       })
       .then(data => {
-        document.getElementById('search-results-content').innerHTML = 
+        document.getElementById('search-results-content').innerHTML = data;
+      })
+      .catch(error => {
+        document.getElementById('search-results-content').innerHTML =
         `<div class="error-state">Search failed: ${error.message}</div>`;
       });
 }
