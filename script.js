@@ -19,7 +19,7 @@ function showSection(sectionId) {
 
 //MANAGE searchClient FUNCTION TO DISPLAY RESULTS
 function searchClient() {
-  const searchTerm = document.getElementById('searchInput').ariaValueMax.trim();
+  const searchTerm = document.getElementById('searchInput').value.trim();
 
   if (searchTerm.length > 2) {
     Swal.fire({
