@@ -15,19 +15,19 @@
                     <tr class="form-row">
                         <td class="form-label">Full Name: </td>
                         <td>
-                            <input class="form-input" type="text" name="name" placeholder="Enter your Full Name">
+                            <input class="form-input" type="text" name="name" placeholder="Enter your Full Name" required>
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Age</td>
                         <td>
-                            <input class="form-input"  type="text" name="age" placeholder="Enter your Age">
+                            <input class="form-input"  type="text" name="age" placeholder="Enter your Age" required>
                         </td>
                     </tr>
                     <tr class="form-row">
                         <td class="form-label">Gender</td>
                         <td>
-                            <select name="gender">
+                            <select name="gender" required>
                                 <option value="" disabled selected>Select your gender</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -37,7 +37,7 @@
                     <tr class="form-row">
                         <td class="form-label">Contact</td>
                         <td>
-                            <input class="form-input" type="tel" name="contact_info" placeholder="+254 xxx">
+                            <input class="form-input" type="tel" name="contact_info" placeholder="+254 xxx" required>
                         </td>
                     </tr>
                     <tr class="form-row">

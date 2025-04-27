@@ -17,7 +17,7 @@
                             icon: "error",
                             title: "Invalid ID",
                             text: "No valid client ID provided"
-                        }).then() => window.location.href = "index.php");
+                        }).then(() => window.location.href = "index.php");
                     });
                 </script>
             </body>
