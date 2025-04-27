@@ -73,7 +73,7 @@
                     }
                     echo '</table>';
                 }else {
-                    echo '<p class="no-programs"No enrolled programs</p>';
+                    echo '<p class="no-programs">No enrolled programs</p>';
                 }
             ?>
 
@@ -94,7 +94,7 @@
     <?php
             }
         }else {
-            echo '<div class="error-message"No clients found matching <strong>"' . htmlspecialchars($searchTerm) . '"</strong></div>';
+            echo '<div class="error-message">No clients found matching <strong>"' . htmlspecialchars($searchTerm) . '"</strong></div>';
         }
     }catch (PDOException $e) {
         echo '<div class="form-container"><div class="form-card"><div class="error-message">Database error: '.htmlspecialchars($e->getMessage()).'</div></div></div>';
