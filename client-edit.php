@@ -88,7 +88,7 @@
                             confirmButtonText: "OK"
                         }).then((result) => {
                             if (result).isConfirmed {
-                                window.location.href = "index.php"; }); 
+                                window.location.href = "<?= SITEURL  ?>"; }); 
                             }
                          });
                     </script>';
@@ -102,7 +102,7 @@
                             text: "'.addslashes($e->getMessage()).'",
                             icon: "error",
                             confirmButtonText: "OK"
-                        }).then(() => { window.location.href = "index.php"; });
+                        }).then(() => { window.location.href = "<?= SITEURL  ?>"; });
                     </script>';
         }
         exit();

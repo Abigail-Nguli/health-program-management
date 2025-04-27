@@ -17,7 +17,7 @@
                             icon: "error",
                             title: "Invalid ID",
                             text: "No valid Program ID provided"
-                        }).then(() => window.location.href = "index.php");
+                        }).then(() => window.location.href = "<?= SITEURL  ?>");
                     });
                 </script>
             </body>
@@ -43,7 +43,7 @@
                             confirmButtonColor: "#3085d6"
                         }).then((result) => {
                         if(result) {
-                         window.location.href = "index.php");
+                         window.location.href = "<?= SITEURL  ?>");
                         }
                     });
                 </script>
@@ -64,7 +64,7 @@
                             title: "Failed",
                             html: "❌ Failed to Delete Program<br><br>'.addslashes($e->getMessage()).'",
                             confirmButtonColor: "#d33"
-                        }).then() => window.location.href = "index.php");
+                        }).then() => window.location.href = "<?= SITEURL  ?>");
                     });
                 </script>
             </body>
