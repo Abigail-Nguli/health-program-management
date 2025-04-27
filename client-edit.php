@@ -49,7 +49,7 @@
                     <td><input type="number" name="age" value="<?= $age ?>" class="form-input"></td>
                 </tr>
                 <tr class="form-row">
-                    <td class="form-label">Countact:</td>
+                    <td class="form-label">Contact:</td>
                     <td><input type="tel" name="contact_info" value="<?= $contact_info ?>" class="form-input"></td>
                 </tr>
                 <tr class="form-row">
