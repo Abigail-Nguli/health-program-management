@@ -34,7 +34,7 @@
 <div class="form-container">
     <div class="form-card">
         <h1 class="form-title">
-            EDIT Program
+            EDIT PROGRAM
         </h1>
 
         <form action="" method="post">
