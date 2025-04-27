@@ -1,4 +1,9 @@
 <?php
+// Add this at the top of migrate.php after successful migration
+if (getenv('ENVIRONMENT') === 'production') {
+    die("Migration already completed");
+}
+
 require 'config.php';
 
 try {
