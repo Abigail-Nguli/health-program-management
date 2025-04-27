@@ -5,8 +5,8 @@ $user = getenv('DB_USER');
 $pass = getenv('DB_PASSWORD');
 $port = getenv('DB_PORT') ?: '5432'; // Default PostgreSQL port
 
-$conn = pg_connect("host=$host dbname=$dbname user=$user password=$pass port=$port");
+$pdo = pg_connect("host=$host dbname=$dbname user=$user password=$pass port=$port");
 
-if (!$conn) {
+if (!$pdo) {
     die("Connection failed: " . pg_last_error());
 }
