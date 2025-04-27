@@ -1,8 +1,8 @@
 const { exec } = require("child_process");
-exec("php -S 0.0.0.0:$PORT", (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error: ${error}`);
-    return;
-  }
-  console.log(`Output: ${stdout}`);
+const port = process.env.PORT || 3000;
+
+exec(`php -S 0.0.0.0:${port} -t public`, (error, stdout, stderr) => {
+  console.log(stdout);
+  console.error(stderr);
+  if (error) process.exit(1);
 });
