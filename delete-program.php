@@ -17,7 +17,10 @@
                             icon: "error",
                             title: "Invalid ID",
                             text: "No valid Program ID provided"
-                        }).then(() => window.location.href = "<?= SITEURL ?>");
+                        }).then((result) => {
+                        if(result) {
+                         window.location.href = "<?= SITEURL ?>");
+                        }
                     });
                 </script>
             </body>
@@ -41,10 +44,7 @@
                             title: "Deleted",
                             text: "Program Deleted Successfully",
                             confirmButtonColor: "#3085d6"
-                        }).then((result) => {
-                        if(result) {
-                         window.location.href = "<?= SITEURL ?>");
-                        }
+                        }).then(() => window.location.href = "<?= SITEURL ?>");
                     });
                 </script>
             </body>
