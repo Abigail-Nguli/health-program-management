@@ -89,7 +89,7 @@
             $stmt->execute([$client_id, $program_id]);
 
             if ($stmt->rowCount() > 0) {
-                throw new Exception("Client is already enrolle in this program!");
+                throw new Exception("Client is already enrolled in this program!");
             }
 
             //ENROLL CLIENT
