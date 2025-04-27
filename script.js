@@ -21,7 +21,7 @@ function showSection(sectionId) {
 function searchClient() {
   const searchTerm = document.getElementById('searchInput').value.trim();
 
-  if (searchTerm.length > 2) {
+  if (searchTerm.length < 2) {
     Swal.fire({
       title: 'Search term too short',
       text: 'Please enter at least 2 characters',
