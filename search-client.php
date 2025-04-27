@@ -8,7 +8,7 @@
     }
 
     try {
-        $stmt = $pdo->prepare("SELECT * FORM clients WHERE name LIKE ? OR contact_info LIKE ? LIMIT 5");
+        $stmt = $pdo->prepare("SELECT * FROM clients WHERE name LIKE ? OR contact_info LIKE ? LIMIT 5");
         $stmt->execute(["%$searchTerm%", "%$searchTerm%"]);
 
         if ($stmt->rowCount() > 0) {
