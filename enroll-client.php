@@ -81,7 +81,7 @@
             //VALIDATE INPUT
             $client_id = filter_input(INPUT_POST, 'client_id', FILTER_VALIDATE_INT);
             $program_id = filter_input(INPUT_POST, 'program_id', FILTER_VALIDATE_INT);
-            $enrollment_date = $_Post['enrollment_date'];
+            $enrollment_date = $_POST['enrollment_date'];
 
             if ((!$client_id) || !$program_id || empty($enrollment_date)) {
                 throw new Exception("Please fill all required fields");
