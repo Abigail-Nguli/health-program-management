@@ -14,4 +14,4 @@ RUN chmod -R 755 /var/www/html
 RUN a2enmod rewrite
 
 # Expose port
-EXPOSE 80
+EXPOSE 80 
