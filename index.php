@@ -238,7 +238,7 @@
         </section>
 
         <!--SEARCH SECTION-->
-        <section id="serach-results" class="hidden section-box">
+        <section id="search-results" class="hidden section-box">
             <div id="search-results-content">
                 <!--REsULTS WILL BE LOADED HERE VIA AJAX-->
             </div>
