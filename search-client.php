@@ -1,5 +1,5 @@
 <?php 
-    include 'db.php';
+    include 'api/config.php';
 
     $searchTerm = isset($_GET['q']) ? trim($_GET['q']) : '';
 
@@ -83,7 +83,7 @@
                         class="delete-btn">
                         <i class="fa-solid fa-file-pen"></i> Edit Client
                     </button>
-                    <button onclick="confirmDelete('program', <?php echo $id; ?>"
+                    <button onclick="window.location.href='delete-client.php?id=<?= $client_id ?>'"
                         class="delete-btn">
                         <i class="fa-solid fa-trash"></i> Delete Client
                     </button>
