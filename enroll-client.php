@@ -81,7 +81,6 @@
             //VALIDATE INPUT
             $client_id = filter_input(INPUT_POST, 'client_id', FILTER_VALIDATE_INT);
             $program_id = filter_input(INPUT_POST, 'program_id', FILTER_VALIDATE_INT);
-            $enrollment_date = $_POST['enrollment_date'];
 
             
 
