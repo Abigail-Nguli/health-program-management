@@ -7,8 +7,6 @@ $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
 $port = getenv('DB_PORT');
 
-define('SITEURL', 'https://health-program-management.onrender.com/');
-
 try {
     // Create PDO connection
     $pdo = new PDO(
