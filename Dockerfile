@@ -1,16 +1,17 @@
 FROM php:8.2-apache
 
-# Install required extensions (customize as needed)
+# Install extensions
 RUN docker-php-ext-install pdo pdo_mysql
 
-# Copy project files
+# Copy files
 COPY . /var/www/html/
 
-# Set proper permissions
+# Set permissions
 RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R 755 /var/www/html
 
-# Enable Apache rewrite module
+# Enable Apache modules
 RUN a2enmod rewrite
 
-# Expose port 80
+# Expose port
 EXPOSE 80
