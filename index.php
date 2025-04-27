@@ -97,7 +97,7 @@
             ?>
             <tbody>
               <tr class="custom-row">
-                <td class="custom-data"><?php echo $sn ?></td>
+                <td class="custom-data"><?php echo $sn++ ?></td>
                 <td class="custom-data"><?php echo htmlspecialchars($name);  ?></td>
                 <td class="custom-data"><?php echo htmlspecialchars($description);  ?></td>
                 <td class="custom-data"><?php echo htmlspecialchars($duration);  ?></td>
