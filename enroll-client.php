@@ -41,15 +41,15 @@
             <table class="form-table">
                 <tr class="form-row">
                     <td class="form-label">Client Name:</td>
-                    <td><input type="text" class="form-input disabled-field" value="<?= $cilent_name ?>"></td>
+                    <td><input type="text" class="form-input disabled-field" value="<?= $cilent_name ?>" readonly></td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-label">Age:</td>
-                    <td><input type="number" class="form-input disabled-field" value="<?= $cilent_age ?>"></td>
+                    <td><input type="number" class="form-input disabled-field" value="<?= $cilent_age ?>" readonly></td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-label">Contact Info:</td>
-                    <td><input type="tel" class="form-input disabled-field" value="<?= $cilent_contact ?>"></td>
+                    <td><input type="tel" class="form-input disabled-field" value="<?= $cilent_contact ?>" readonly></td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-label">Program</td>
@@ -61,7 +61,7 @@
                                 $stmt->execute();
 
                                 while($program = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                                    echo '<option value=""'.htmlspecialchars($program['id']).'">'.htmlspecialchars($program['name']).'</option>';
+                                    echo '<option value="'.htmlspecialchars($program['id']).'">'.htmlspecialchars($program['name']).'</option>';
                                 }
                             ?>
                         </select>
