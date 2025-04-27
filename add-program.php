@@ -66,7 +66,7 @@
                     title: "Success!",
                     text: "Program Added Successfully!",
                     icon: "success",
-                    confirmButonText: "OK
+                    confirmButonText: "OK"
         }).then((result) => {
                     if (result).isConfirmed {
                         window.location.href = "<?= SITEURL ?>"; 
@@ -79,7 +79,7 @@
                     title: "Error!",
                     text: "❌Failed to Add Program!",
                     icon: "error",
-                    confirmButtonText: "OK
+                    confirmButtonText: "OK"
                 });
             </script>';
         }
