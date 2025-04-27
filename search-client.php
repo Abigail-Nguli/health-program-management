@@ -64,7 +64,7 @@
                             <th class="form-label">Duration</th>
                           </tr>';
 
-                    while ($programs = $programStmt->fetch(PDO::FETCH_ASSOC)) {
+                    while ($program = $programStmt->fetch(PDO::FETCH_ASSOC)) {
                         echo '<tr class="form-row">
                                 <td class="form-value">'.htmlspecialchars($program['name']).'</td>
                                 <td class="form-value">'.htmlspecialchars($program['description']).'</td>
