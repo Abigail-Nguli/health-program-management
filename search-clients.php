@@ -80,7 +80,7 @@
                 <!--ACTION BUTTONS-->
                 <div class="action-buttons">
                     <button onclick="window.location.href='client-edit.php?id=<?= $client_id ?>'"
-                        class="delete-btn">
+                        class="edit-btn">
                         <i class="fa-solid fa-file-pen"></i> Edit Client
                     </button>
                     <button onclick="window.location.href='delete-client.php?id=<?= $client_id ?>'"
