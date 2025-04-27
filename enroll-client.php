@@ -57,7 +57,7 @@
                         <select name="program_id" class="form-input" required>
                             <option value="">Select a program</option>
                             <?php 
-                                $stmt = $pdo->prepare("SELECT * id, name FROM programs");
+                                $stmt = $pdo->prepare("SELECT id, name FROM programs");
                                 $stmt->execute();
 
                                 while($program = $stmt->fetch(PDO::FETCH_ASSOC)) {
