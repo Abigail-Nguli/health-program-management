@@ -35,7 +35,7 @@ function searchClient() {
   '<div class="loading-state">Searching clients...</div>';
 
   //SHOW RESULTS
-  showSection('search-result');
+  showSection('search-results');
 
   //AJAX REQUEST
   fetch(`search-clients.php?q=${encodeURIComponent(searchTerm)}`)
