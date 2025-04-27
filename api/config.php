@@ -1,10 +1,13 @@
 <?php
 // Get environment variables
+
 $host = getenv('DB_HOST');
 $dbname = getenv('DB_NAME');
 $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
-$port = getenv('DB_PORT') ?: '5432'; // Default PostgreSQL port
+$port = getenv('DB_PORT');
+
+define('SITEURL', 'https://health-program-management.onrender.com/');
 
 try {
     // Create PDO connection
