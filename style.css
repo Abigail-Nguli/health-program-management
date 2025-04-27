@@ -334,7 +334,7 @@ footer {
 }
 
 .edit-btn .delete-btn {
-    flex-direction: 1;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
