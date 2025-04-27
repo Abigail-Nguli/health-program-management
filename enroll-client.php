@@ -83,9 +83,7 @@
             $program_id = filter_input(INPUT_POST, 'program_id', FILTER_VALIDATE_INT);
             $enrollment_date = $_POST['enrollment_date'];
 
-            if ((!$client_id) || !$program_id || empty($enrollment_date)) {
-                throw new Exception("Please fill all required fields");
-            }
+            
 
             //CHECK IF ENROLLMENT ALREADY EXISTS
             $stmt = $pdo->prepare("SELECT 1 FROM client_programs WHERE client_id = ? AND program_id = ?");
