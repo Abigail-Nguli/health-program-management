@@ -108,7 +108,11 @@
                     text: "Client Enrolled Successfully!",
                     icon: "success",
                     confirmButtonText: "OK"
-                }).then(() => { window.location.href = "index.php"; });
+                }).then((result) => {
+                    if (result).isConfirmed {
+                        window.location.href = "index.php"; }); 
+                    }
+                  });
             </script>';
             }else {
                 throw new Exception("Failed to enroll client");

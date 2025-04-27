@@ -67,7 +67,11 @@
                     text: "Program Added Successfully!",
                     icon: "success",
                     confirmButonText: "OK
-        }).then(() => { window.location.href = "index.php"; });
+        }).then((result) => {
+                    if (result).isConfirmed {
+                        window.location.href = "index.php"; }); 
+                    }
+                });
             </script>';
         }else {
             echo '<script>

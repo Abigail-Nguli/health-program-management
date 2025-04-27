@@ -71,8 +71,12 @@
                     text: "Client Added Successfully!",
                     icon: "success",
                     confirmButonText: "OK
-        }).then(() => { window.location.href = "index.php"; });
-            </script>';
+        }).then((result) => {
+            if (result).isConfirmed {
+                 window.location.href = "index.php"; }); 
+            }
+        });
+        </script>';
         }else {
             echo '<script>
                 Swal.fire({

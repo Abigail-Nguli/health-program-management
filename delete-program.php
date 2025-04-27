@@ -41,7 +41,10 @@
                             title: "Deleted",
                             text: "Program Deleted Successfully",
                             confirmButtonColor: "#3085d6"
-                        }).then() => window.location.href = "index.php");
+                        }).then((result) => {
+                        if(result) {
+                         window.location.href = "index.php");
+                        }
                     });
                 </script>
             </body>
