@@ -72,7 +72,7 @@
                     icon: "success",
                     confirmButonText: "OK"
         }).then((result) => {
-            if (result).isConfirmed {
+            if (result.isConfirmed) {
                  window.location.href = "<?= SITEURL ?>";  
             }
         });
